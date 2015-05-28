@@ -14,6 +14,7 @@ NULL
 #' @rdname moments
 #' @export
 E <- function(x) {
+  if (!is.rv(x)) stop("Input must be an rv object")
   sum(as.numeric(x) * probs(x))
 }
 

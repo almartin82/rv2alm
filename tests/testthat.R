@@ -3,4 +3,4 @@ library(testthat)
 # you have installed
 library(rv2)
 
-test_check("rv2")
+test_package("rv2")
